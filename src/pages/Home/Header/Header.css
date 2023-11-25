@@ -1,0 +1,46 @@
+.back{
+    background-image: url('../../../assets/backgroundimg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    opacity: 1.5;
+}
+
+/* text background  */
+
+.line{
+    border: 1px solid black;
+    width: 200px;
+}
+
+
+/* responsive background */
+@media screen and (min-width: 768px) and (max-width: 920px) {
+    .back {
+        background-image: url('../../../assets/backgroundmedium.png');
+        background-color: black;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 700px;
+        opacity: 1.5;
+    };
+    .heroText{
+
+    }
+  }
+
+  @media screen and (min-width: 375px) and (max-width: 920px) {
+    .back {
+        background-image: url('../../../assets/backgroundmedium.png');
+        background-color: black;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.6;
+        z-index: -1;
+        height: 700px;
+        opacity: 1.5;
+    };
+    .heroText{
+
+    }
+  }
