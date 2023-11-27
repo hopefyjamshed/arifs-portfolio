@@ -1,0 +1,11 @@
+.aboutback{
+   
+    background-image: url('../../../assets/aboutmeimg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 700px;
+    opacity: 1.5;
+    background-attachment: fixed;
+}
+
+ 

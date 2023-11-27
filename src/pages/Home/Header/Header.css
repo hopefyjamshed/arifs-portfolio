@@ -1,9 +1,16 @@
 .back{
     background-image: url('../../../assets/backgroundimg.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% auto;
     height: 700px;
     opacity: 1.5;
+    background-attachment: fixed;
+
+    /* background-position:absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; */
 }
 
 /* text background  */
@@ -15,23 +22,19 @@
 
 
 /* responsive background */
-@media screen and (min-width: 768px) and (max-width: 920px) {
-    .back {
-        background-image: url('../../../assets/backgroundmedium.png');
-        background-color: black;
+@media screen and (min-width: 168px) and (max-width: 920px) {
+    .back {    
+        background-color: antiquewhite;
         background-repeat: no-repeat;
         background-size: cover;
         height: 700px;
         opacity: 1.5;
     };
-    .heroText{
+}
 
-    }
-  }
-
-  @media screen and (min-width: 375px) and (max-width: 920px) {
+  /* @media screen and (min-width: 260px) and (max-width: 920px) {
     .back {
-        background-image: url('../../../assets/backgroundmedium.png');
+        
         background-color: black;
         background-repeat: no-repeat;
         background-size: cover;
@@ -40,7 +43,7 @@
         height: 700px;
         opacity: 1.5;
     };
-    .heroText{
-
-    }
-  }
+    
+}
+};
+ */
