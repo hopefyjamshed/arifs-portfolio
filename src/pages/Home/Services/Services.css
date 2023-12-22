@@ -1,0 +1,7 @@
+.background{
+background-image: url('../../../assets/services-bg.webp');
+background-repeat: no-repeat;
+background-size: cover;
+filter: brightness(20%);
+}
+

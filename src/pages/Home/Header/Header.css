@@ -1,8 +1,8 @@
 .back{
     background-image: url('../../../assets/backgroundimg.jpg');
     background-repeat: no-repeat;
-    background-size: 100% auto;
-    height: 700px;
+    background-size: 100% 100%;
+    
     opacity: 1.5;
     background-attachment: fixed;
 
@@ -27,23 +27,20 @@
         background-color: antiquewhite;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 700px;
+        
         opacity: 1.5;
     };
 }
 
-  /* @media screen and (min-width: 260px) and (max-width: 920px) {
-    .back {
-        
-        background-color: black;
+@media screen and (min-width:820px) and (min-height: 1180px) {
+    .back{
+        background-image: url('../../../assets/backgroundimg.jpg');
+        /* background-color: rgb(206, 202, 202); */
         background-repeat: no-repeat;
         background-size: cover;
-        opacity: 0.6;
-        z-index: -1;
-        height: 700px;
+       
         opacity: 1.5;
-    };
+        /* background-attachment: fixed; */
     
+    }
 }
-};
- */

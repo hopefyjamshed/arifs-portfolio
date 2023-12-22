@@ -12,14 +12,15 @@ const About = () => {
         Aos.init()
     },[])
     return (
-        <div className='aboutback min-h-screen'>
+        <div className='aboutback min-h-screen flex justify-center items-center'>
            
 
-           <div className="hero min-h-screen bg-black lg:bg-transparent">
-  <div className="hero-content lg:hero-content-none flex-col lg:flex-row">
-    <div className=' w-full lg:border lg:h-[500px]' data-aos='fade-right'>
+           <div className="hero min-h-screen bg-black  lg:bg-transparent">
+  <div className="hero-content flex-col lg:flex-row topmargine">
+    <div className='w-full  hidden lg:inline lg:w-screen lg:border lg:h-[500px]' data-aos='fade-right'>
     <img src={authorimg} className="h-full w-full" data-aos='fade-up' data-aos-delay='100' data-aos-duration='1000'/>
     </div>
+    <img src={authorimg} className="h-full w-full lg:hidden" data-aos='fade-up' data-aos-delay='100' data-aos-duration='1000'/>
     <div className='' data-aos='fade-left' data-aos-duration='1000'>
         <h3 className='text-white'>My Name Is Arif Hossain</h3>
       <h1 className="text-3xl lg:text-5xl font-bold text-white">I'm a Proffesional Graphics Designer</h1>
