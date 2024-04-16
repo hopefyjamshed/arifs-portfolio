@@ -31,9 +31,9 @@ const Navbar = () => {
       <ul tabIndex={0} className="menu menu-sm dropdown-content text-black mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
       <li><Link to='' className='font-semibold antialiased'>About</Link></li>
       <li><Link to='' className='font-semibold antialiased'>Skill</Link></li>
-      <li><Link to='' className='font-semibold antialiased'>Skill</Link></li>
       <li><Link to='' className='font-semibold antialiased'>Services</Link></li>
-      <li><Link to='' className='font-semibold antialiased'>Experience</Link></li>
+      <li><Link to='' className='font-semibold antialiased'>Contact</Link></li>
+      {/* <li><Link to='' className='font-semibold antialiased'>Experience</Link></li> */}
       </ul>
     </div>
     
@@ -44,8 +44,8 @@ const Navbar = () => {
       <li><Link to='' className='font-semibold antialiased'>About</Link></li>
       <li><Link to='' className='font-semibold antialiased'>Skill</Link></li>
       <li><Link to='' className='font-semibold antialiased'>Services</Link></li>
-      <li><Link to='' className='font-semibold antialiased'>Work</Link></li>
-      <li><Link to='' className='font-semibold antialiased'>Experience</Link></li>
+      <li><Link to='' className='font-semibold antialiased'>Contact</Link></li>
+      {/* <li><Link to='' className='font-semibold antialiased'>Experience</Link></li> */}
     </ul>
  
   </div>

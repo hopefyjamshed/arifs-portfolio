@@ -62,7 +62,7 @@ const Skills = () => {
 {
   softwareSkills?.map(sk=><div>
 <h1 className='text-xl font-sm mb-[7px]'>{sk.name}</h1>
-<div class="w-[60%] bg-gray-200 rounded-full dark:bg-gray-700" data-aos='fade-up' data-aos-delay='1000' data-aos-duration='1000'> 
+<div class="w-[60%] bg-gray-200 rounded-full dark:bg-gray-700" data-aos='fade-up' data-aos-delay='' data-aos-duration='1000'> 
     <div className="bg-black text-xs font-medium text-white text-center p-0.5 leading-none mb-2 rounded-full" style={{width: `${sk.persent}%`}}> {sk.persent}%</div>
   </div>
 
@@ -80,7 +80,7 @@ const Skills = () => {
             </div>
 
 {/* personal skills  */}
-            <div className='w-full lg:w-[600px] mt-[40px] lg:mt-0' data-aos='fade-left' data-aos-duration='2000' data-aos-delay=''>
+            <div className='w-full lg:w-[600px] mt-[40px] lg:mt-0' data-aos='fade-left' data-aos-duration='2000' data-aos-delay='150'>
                 <h1 className='text-3xl mb-12 lg:text-right mt-[70px] lg:mt-0'>Personal skills</h1>
                 
             <div className='lg:ml-[200px] ml-[10%] grid grid-cols-2 md:grid-cols-4 justify-end gap-5 items-end' data-aos='fade-up' data-aos-duration='2000' data-aos-delay='100'>

@@ -35,7 +35,8 @@ const UploadProjects = () => {
                   console.log(img)
                   const uploadData = {
                       image: img==='' ? "no image appeard": img,
-                       name: data.name
+                       name: data.name,
+                    //    link: data.link
                   }
                   fetch('http://localhost:5000/uploadService', {
                       method: 'POST',
@@ -61,7 +62,7 @@ const UploadProjects = () => {
 
             {/* Open the modal using document.getElementById('ID').showModal() method */}
 {/* modal open button  */}
-<div className='card h-[200px] absolute w-[150px] cursor-pointer bg-gradient-to-r from-violet-400 to-indigo-700'>
+<div className='card h-[200px] absolute w-[150px] cursor-pointer bg-gradient-to-r from-violet-200 to-indigo-700'>
 <hr className='text-white  mt-4' />
 <hr className='text-white  mt-4' />
 <hr className='text-white  mt-4' />
@@ -83,8 +84,9 @@ const UploadProjects = () => {
   <div className="modal-box relative">
     <h3 className="font-bold text-lg">Add projects Here</h3>
     <form onSubmit={handleSubmit(uploadProjects)}>
-        <input className='ml-5 mt-2' type="file" {...register('img')} />
-            <input type="text" name="about" {...register('name')} placeholder="Type here" className=" hover:bg-blue-100 w-[90%] textarea p-5 rounded-md mx-5 my-5 border-gray-400 focus:border-gray-300  focus: " />
+        <input className='ml-5 text-black mt-2' type="file" {...register('img')} />
+        {/* <input type="text" name='link' {...register('link')} className=" hover:bg-blue-100 w-[90%] text-black textarea p-5 rounded-md mx-5 my-5 border-gray-400 focus:border-gray-300  focus: " placeholder='type link here'/> */}
+            <input type="text" name="about" {...register('name')} placeholder="describe your service" className=" hover:bg-blue-100 w-[90%] textarea p-5 rounded-md mx-5 my-5 border-gray-400 focus:border-gray-300  focus: " />
            <button className='bg-blue-500 text-white p-[12px] rounded-lg font-semibold absolute bottom-[23px] right-[100px]' type='submit' value='Submit'>Submit</button>
             </form>
     <div className="modal-action">

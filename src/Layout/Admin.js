@@ -6,6 +6,7 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 import UploadForm from '../pages/Admin/UploadForm/UploadForm';
 import UploadProjects from '../pages/Admin/Projects/UploadProjects';
+import SkillUpload from '../pages/Admin/SkillUpload/SkillUpload';
 
 const Admin = () => {
     useEffect(()=>{
@@ -28,6 +29,7 @@ const Admin = () => {
 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-3 mx-auto'>
 <UploadForm></UploadForm>
 <UploadProjects></UploadProjects>
+<SkillUpload></SkillUpload>
 </div>
           </div>
         </div>

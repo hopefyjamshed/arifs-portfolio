@@ -31,7 +31,7 @@ const UploadForm = () => {
 
             {/* Open the modal using document.getElementById('ID').showModal() method */}
 {/* modal open button  */}
-<div className='card h-[200px] absolute w-[150px] cursor-pointer mt-5 bg-gradient-to-r from-amber-200 to-yellow-400'>
+<div className='card h-[200px] absolute w-[150px] cursor-pointer mt-5 bg-gradient-to-r from-amber-200 to-yellow-700'>
 <hr className='text-white  mt-4' />
 <hr className='text-white  mt-4' />
 <hr className='text-white  mt-4' />
@@ -53,6 +53,7 @@ const UploadForm = () => {
     <h3 className="font-bold text-lg">Add About Here</h3>
     <form onSubmit={handleSubmit(uploadAbout)}>
             <textarea type="text" name="about" {...register('about')} placeholder="Type here" className=" hover:bg-blue-100 w-[90%] textarea p-5 rounded-md mx-5 my-5 border-gray-400 focus:border-gray-300  focus: " />
+            
            <button className='bg-blue-500 text-white p-[12px] rounded-lg font-semibold absolute bottom-[23px] right-[100px]' type='submit' value='Submit'>Submit</button>
             </form>
     <div className="modal-action">
